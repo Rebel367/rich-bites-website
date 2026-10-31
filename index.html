@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Bites</title>
+    <style>
+        body{
+            background-color: #f5eee3;
+            font-family: Georgia, serif;
+            text-align: center;
+            color: #3b2418;
+            padding-top: 20px;
+            margin: 0;
+            line-height: 1.7;
+        }
+        h3{
+            color: #3b2418;
+            font-size: 42px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+    .order-btn{
+        background-color: #3b2418;
+        color: #fff8ed;
+        padding: 15px 30px;
+        border: 1px solid #b88a55;
+        border-radius: 10px;
+        font-size: 18 px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        }
+    .order-btn:hover{
+        background-color: #8b5e3c;
+        color: rgb(214, 210, 210);
+        transform:translateY(-3px);
+        box-shadow: 0 6px 15px rgba(59,36,24, 0.2);
+
+    }
+    p{
+        color: #24181f;
+        font-size: 50 px;
+    }
+    .cookie-menu{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .cookie{
+     background-color: #fff8ed;
+     margin: 10px;
+     padding: 25px;
+     width: 90%;
+     max-width: 650px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(59,36,24, 0.12);
+     box-sizing: border-box;
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3 ease;
+    }
+    .cookie h3{
+        color: #cbcb57;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .cookie p{
+        color: #333;
+        line-height: 1.0;
+    }
+    @media (max-width: 600px){
+    .cookie-menu{
+        margin: 10px;
+        gap: 15px;
+        }
+    .cookie{
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto;
+    }
+    img{
+        max-width: 90%;
+        height: auto;
+     }
+   }   
+   nav{
+        background-color: #3b2418;
+        padding: 18px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4 px 12 px #d6c3b3;
+        }
+     nav a{
+        color: aliceblue;
+        text-decoration:none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease;
+     }   
+     nav a:hover{
+        color: #d4a96a;
+     }
+     #contact{
+        display: block;
+        background-color: #fffdf8;
+        padding: 30px;
+        margin: 40px;
+        width: 100%;
+        max-width: 600px;
+        border: 1px solid #e5d2b8;
+        position: relative;
+        left: auto;
+        border-radius: 15px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0 8px 20px rgba(59, 36, 24, 0.10);
+     }
+    #contact h2{
+        color:#3b2418
+    }
+    #contact a{
+        color: #8b5e3c;
+        font-weight: bold;
+        text-decoration:none;
+    }
+    #contact a:hover{
+        color: #b88a55;
+    }
+    @media (max-width: 600px){
+        .cookie-menu{
+            gap: 15px;
+            padding: 10px;
+            background-color: #fff8ed;
+            margin: 10px;
+            width: 90%;
+            max-width: 650px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(59,36,24, 0.12);
+            box-sizing: border-box;
+            transition: transform 0.3s ease, box-shadow 0.3 ease;
+        }
+        .cookie-menu{
+            width:100%;
+            max-width: 300px;
+        }
+        .cookie img{
+            display: block;
+            max-width: 300px;
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+            box-shadow: 0 6px 15px rgba(59,36,24, 0.18);
+            transition: transform 0.3s ease;
+        }
+        nav a{
+            display:inline-block;
+            margin: 5px;
+        }
+    }
+    button{
+        background-color: rgb(154, 111, 54);
+        color: aliceblue;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .button:hover{
+        background-color: chocolate;
+    }
+    .welcome{
+        font-size: 18px;
+        color: #7e9e33;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 15px auto;
+        padding: 10px;
+    }
+    body{
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color:#bcbc60
+    }
+    h1, h2, h3{
+        line-height: 1.3;
+    }
+    section{
+        margin-bottom: 30px;
+    }
+    .cookie h3{
+        color: #5a3020;
+        font-size: 23px;
+        margin-bottom: 15px;
+        letter-spacing: 0.5px;
+    }
+    .cookie p{
+        color: 6b5650;
+        font-size: 16px;
+    }
+    .cookie strong{
+        color: #8b5e3c;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+   .cookie:hover{
+    transform:translateY(-4px);
+    box-shadow: 0 14px rgba(200, 140, 108, 0.2) 
+   }
+   nav{
+    background-color: #3b2418;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(59,36,24, 0.15);
+   }
+   nav a{
+    color: #fff8ed;
+    text-decoration: none;
+    margin: 0.15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+   }
+   nav a:hover{
+    color: #d4a96a;
+   }
+   h2{
+    color: #3b2418;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+   }
+   footer{
+        background-color: #3b2418;
+        color: #fff8ed;
+        padding: 25px;
+        margin-top: 40px;
+        border-radius: 12px;
+        letter-spacing: 0.5px;
+        font-size: 15px;
+    }
+     footer p{
+        margin: 5px;
+        color: #fff8ed;
+    }
+
+  </style>
+</head>
+<button onclick="window.scrollTo({bottom:  0, behaviour: 'smooth'})">
+    Go To Bottom
+</button>
+<body>
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#menu">Our menu</a> |
+        <a href="#contact">Contact</a>|
+    </nav>
+    <h3 id="home">WELCOME TO RICH BITES</h3>
+    <p classa="welcome">     
+     Welcome to Rich Bites, where every bite brings you happiness!
+     Discover our freshly baked cookies and order yours today.
+    </p>
+    <img src="images/WhatsApp Image 2026-10-28 at 01.14.41.jpeg" alt="Delicious Rich Bites Cookies" width="300">
+    <p>
+        At Rich Bites, we believe in creating the perfect cookie experience. Our cookies are made with the finest ingredients, ensuring every bite is a delightful treat. Whether you prefer classic flavors or unique combinations, we have something for everyone.
+    </p>
+    <h2 id="menu">Our Cookie menu</h2>
+    <div class="cookie-menu">
+    <div class="cookie">
+    <h3>1. Chocolate chip cookies</h3>
+    <img src="images/chocolate%20chip.jpg" alt="Chocolate Chip Cookies">
+    <p>Rich delicious cookies filled with chocolate chips</p>    
+    <p><strong> Selling for just 16 cedis</strong></p>
+    </div>
+    <div class="cookie">
+    <h3>2. Oatmeal raisin cookies</h3>
+    <img src="images/oatmeal.jpg" alt="Oatmeal Raisin Cookies" >
+    <p>Soft and chewy cookies packed with oats and raisins</p>
+    <p><strong>Selling for 12 cedis</strong></p>
+    </div> 
+    <div class="cookie">
+    <h3>3. Butter cookies</h3>
+    <img src="images/butter%20cookies.jpg" alt="Butter Cookies">
+    <p>Creamy cookies made with butter</p>
+    <p><strong>Selling for just 10 cedis</strong></p>
+    </div>
+    </div>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>For more enquiries, call us on: <a href="tel:+233597842973">0597842973</a></p>
+        <p>WhatsApp: <a href="https://wa.me/233508182407" target="_blank">0508182407</a>/<a href="https://wa.me/233597842973" target="_blank">0597842973</a></p>
+    </section>
+    <p>Small bites, Big Smiles</p>
+    <a class="order-btn"
+     href="https://wa.me/233508182407"
+    target="_blank"
+    rel="noopener">
+    Pre-order now
+    </a>
+<footer>
+    <p>&copy; 2026 Rich Bites. All Rights Reserved</p>
+    <p>Fresh cookies, made with love</p>
+</footer>
+<button onclick="window.scrollTo({top: 0,behavior: 'smooth'})">
+    Back to Top 
+</button>
+</body>
+</html>
